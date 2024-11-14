@@ -1,0 +1,107 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1b1b1b;
+    color: #f2f2f2;
+    line-height: 1.6;
+}
+
+/* Navbar Styling */
+header nav {
+    display: flex;
+    justify-content: center;
+    background-color: #0d0d0d;
+    padding: 15px;
+}
+
+header nav a {
+    color: #f2f2f2;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: #e6b800;
+}
+
+/* Hero Section Styling */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #f2f2f2;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.hero h1::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 2px;
+    background-color: #e6b800;
+    margin: 10px auto;
+}
+
+.hero p {
+    color: #dcdcdc;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    line-height: 1.8;
+}
+
+/* Responsive Typography */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Center and style the register button section */
+.register-button-section {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.register-button {
+    padding: 12px 30px;
+    background-color: #e6b800; /* Matching theme color */
+    color: #fff;
+    font-size: 1rem;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.register-button:hover {
+    background-color: #d4a600;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}

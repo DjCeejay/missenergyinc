@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/jpg" href="logo2.png">
+    <title>Miss Energy International</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <script src="script.js"></script>
+
+</head>
+<body>
+   <!-- Collapsible Sidebar -->
+   <div class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+        <img src="logo2.png" alt="Miss Energy Logo" class="logo-img">
+        <span class="logo">Miss Energy International</span>
+        <button class="close-btn" onclick="toggleSidebar()">&times;</button>
+    </div>
+    <ul class="sidebar-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about_us">About Us</a></li>
+        <li><a href="franchise.html">Franchise</a></li>
+        <li><a href="#sponsors">Sponsors</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+        <li><a href="registration.html"> Register</a></li>
+    </ul>
+</div>
+
+<button class="open-btn" onclick="toggleSidebar()"><i class="fas fa-bars"></i></button>
+
+    <!-- Hero Section -->
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <img src="logo2.png" alt="Miss Energy International Logo" class="fade-in-logo">
+            <p class="fade-in-text">The Intersection of Beauty, Intelligence, and Sustainable Energy in Pageantry .</p>
+            <a href="registration.html" class="cta-button fade-in-button">Register Now</a>
+        </div>
+    </section>
+
+
+    <script
+    <!-- Add JavaScript at the end of the body -->
+    const images = [
+    'starry_bg.jpg',    // First slide with content
+    'image2.jpg',        // Second slide without content
+    'image3.jpg'        // Third slide without content
+];
+
+let currentIndex = 0;
+const heroSection = document.querySelector('.hero');
+const heroContent = document.querySelector('.hero-content');
+
+function preloadImages(imageArray) {
+    imageArray.forEach((src) => {
+        const img = new Image();
+        img.src = src;
+    });
+}
+
+function changeBackgroundImage() {
+    // Increment index and loop through images
+    currentIndex = (currentIndex + 1) % images.length;
+    
+    // Set the background image and add fade effect
+    heroSection.style.transition = "background-image 1.5s ease-in-out";
+    heroSection.style.backgroundImage = `url(${images[currentIndex]})`;
+    
+    // Show content only for the first slide
+    if (currentIndex === 0) {
+        heroContent.classList.remove('hidden');
+    } else {
+        heroContent.classList.add('hidden');
+    }
+}
+
+// Preload images and set interval
+preloadImages(images);
+setInterval(changeBackgroundImage, 5000); 
+</script>>
+
+
+
+     <!-- About Us section -->
+     <section id="about_us">
+        <div class="background-overlay"></div>
+        <div class="container">
+            <div class="section-title">
+                <h2 class="animated-text"> About Us</h2>
+            </div>
+            <div class="content">
+                <div class="text">
+                    <h3 class="animated-text"></h3>
+                    <p class="animated-text">Miss Energy International is a beauty pageant, with an emphasis on 
+                        glamour, grace, beauty; intelligence and sustainable energy. The contestants for Miss Energy 
+                        International will captivate audiences not just with their appearance but as empowered 
+                        ambassadors for change, blending beauty, intelligence, and sustainability into a powerful message. 
+                        The theme of Miss Energy International highlights sustainable energy as a crucial global issue 
+                        that pageants can champion. As the focus shifts to these pressing challenges, pageants are 
+                        inspiring future generations.
+
+                    </p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+     <!-- Vision and Mission Section -->
+     <section id="message">
+        <div class="background-overlay"></div>
+        <div class="container">
+            <div class="section-title">
+                <h2 class="animated-text">Sustainable Energy</h2>
+            </div>
+            <div class="content">
+                <div class="text">
+                    <h3 class="animated-text">A Core Message</h3>
+                    <p class="animated-text">Sustainable energy is a vital focus today, particularly emphasized 
+                        in the Miss Energy International pageant. Contestants in Miss Energy International highlight the 
+                        importance of transitioning to renewable energy sources, showcasing initiatives like solar-powered 
+                        beauty salons and sustainable skincare brands. These efforts illustrate how the beauty industry 
+                        can contribute to environmental sustainability. Contestants engage in community projects that 
+                        promote energy efficiency, such as tree planting and educational workshops, amplifying their 
+                        impact and serving as role models.
+                    </p>
+                </div>
+               
+            </div>
+        </div>
+    </section>
+
+    <div class="parallax-2">
+        <h1>The Power of Advocacy</h1>
+    </div>
+
+    <div class="para-2">
+        <p>Miss Energy International pageants provide a unique platform for advocacy. Contestants leverage their 
+            visibility to raise awareness about climate issues and encourage communities to embrace sustainable energy 
+            solutions. Through their participation in Miss Energy International, these women become influential voices for 
+            change, collaborating with organizations focused on renewable energy and influencing policies. Their initiatives 
+            create a ripple effect, encouraging fans and followers to adopt sustainable practices in their daily lives.
+        </p>
+    </div>
+    
+    <div class="parallax-3">
+        <h1>Empowering Future Generations</h1>
+    </div>
+
+    <div class="para-3">
+        <p>Our pageants highlight the importance of sustainable energy, they also inspire young women to 
+            pursue careers in science, technology, engineering, and mathematics (STEM). By showcasing intelligence 
+            alongside beauty, contestants encourage future generations to recognize their potential and advocate for 
+            a sustainable future. Miss Energy International will actively promote  mentorship programs, equipping 
+            young women with the tools they need to succeed in these fields.
+        </p>
+    </div>
+
+    <section class="sponsors" id="sponsors">
+        <h2>Sponsors</h2>
+        <div class="sponsor-slider">
+            <div class="sponsor-logos">
+                <img src="sponsor1.jpg" alt="Sponsor 1">
+                <img src="sponsor2.jpg" alt="Sponsor 2">
+                <img src="sponsor3.png" alt="Sponsor 3">
+                <img src="sponsor4.jpeg" alt="Sponsor 4">
+                <img src="sponsor5.jpg" alt="Sponsor 5">
+                <!-- Add more sponsor logos as needed -->
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or would like to connect, please feel free to reach out.</p>
+        <div class="contact-info">
+            <div class="contact-item">
+                <h3>Email</h3>
+                <p>Missenergyinternational@gmail.com</p>
+            </div>
+            
+            <div class="contact-item">
+                <h3>Location</h3>
+                <p>Texas, USA</p>
+            </div>
+        </div>
+        <form class="contact-form" action="submit_form.php" method="POST">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <div class="social-media">
+            <a href="https://wa.link/sad2rj" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://instagram.com/missenergyinternational" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Star Edged Media LLC. All Rights Reserved.</p>
+    </footer>
+
+    
+    
+
+
+
+    
